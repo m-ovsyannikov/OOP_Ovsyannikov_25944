@@ -1,0 +1,19 @@
+# Compiled binaries / objects
+*.o
+*.obj
+*.out
+*.exe
+*.a
+*.so
+*.dylib
+ex1
+ex1+
+
+# Build dirs
+build/
+cmake-build-*/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
