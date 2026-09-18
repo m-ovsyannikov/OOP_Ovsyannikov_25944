@@ -4,15 +4,13 @@
 
 int main() {
     int celc;
-    int v;
-    std::cout << "Choose version: 0 - without rand, 1 - with rand: ";
-    std::cin >> v;
+    double dcelc;
     std::cout << "Input celc: ";
     std::cin >> celc;
-    if (v == 0) {
-        std::cout << toFahrenheit(celc);
-    } else {
-        std::cout << toFahrenheit_rand(celc);
-    }
+    dcelc = celc;
+    std::cout << normik::toFahrenheit<int, double>(celc) << std::endl;
+    std::cout << randik::toFahrenheit<int, double>(celc) << std::endl;
+    std::cout << normik::toFahrenheit<double, int>(dcelc) << std::endl;
+    std::cout << randik::toFahrenheit<double, int>(dcelc) << std::endl;
     return 0;
 }
